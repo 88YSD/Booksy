@@ -1,0 +1,8 @@
+<h1>Book List</h1>
+<ul>
+    {% for book in booksy %}
+        <li><a href="{% 
+url 'book_detail' book.pk
+%}">{{ book.title }}</a></li>
+        {% endfor %}
+</ul>
